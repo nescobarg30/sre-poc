@@ -1,0 +1,17 @@
+---
+#System Settings
+php_modules: [ 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'php-soap', 'php-intl', 'php-zip' ]
+
+#postgres Settings
+postgres_root_password: "nicole123"
+postgres_db: "databasepg"
+postgres_user: "nicole"
+postgres_password: "nicole123"
+postgres_host: "master-database.ch6j4kg5hqwn.us-east-1.rds.amazonaws.com"
+postgres_host_endpoint: "master-database.ch6j4kg5hqwn.us-east-1.rds.amazonaws.com:5432"
+
+
+#HTTP Settings
+http_host: "alb-poc-1942179222.us-east-1.elb.amazonaws.com"
+http_conf: "poc.conf"
+http_port: "80"
