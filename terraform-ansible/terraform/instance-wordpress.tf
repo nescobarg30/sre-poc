@@ -4,7 +4,7 @@ resource "aws_instance" "wordpress-a" {
   key_name                    = aws_key_pair.pockey.key_name
   vpc_security_group_ids      = [aws_security_group.wordpress.id]
   subnet_id                   = aws_subnet.app-subnet-a.id
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   tags = {
     Name = "terraform-EC2 Instance"
   }
@@ -16,7 +16,7 @@ resource "aws_instance" "wordpress-b" {
   key_name                    = aws_key_pair.pockey.key_name
   vpc_security_group_ids      = [aws_security_group.wordpress.id]
   subnet_id                   = aws_subnet.app-subnet-b.id
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   tags = {
     Name = "terraform-EC2 Instance"
   }
